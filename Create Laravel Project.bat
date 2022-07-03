@@ -1,11 +1,11 @@
-@echo on
+@echo off
 echo Enter your laravel project name : 
 set /p myProjName=
 echo Enter your laravel project path :
 set /p myProjPath=
 set proj="%myProjPath%\%myProjName%"
-set installerPath=%CD%
+set installerPath=%~dp0
 cd %myProjPath%
 call laravel new %myProjName%
-call "Install Nessesary Packages.bat" %proj% %installerPath%
+call "%installerPath%Install Nessesary Packages.bat" %proj% "%installerPath%"
 pause
