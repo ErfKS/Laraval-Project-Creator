@@ -1,11 +1,10 @@
 @echo off
 
 echo Are you installed "Composer"?(Y/N)
-
-set /p Composer=
+set /p installedWebpak=
 set T=F
-if %larMix%==n set T=T
-if %larMix%==N set T=T
+if %installedWebpak%==n set T=T
+if %installedWebpak%==N set T=T
 if "%T%"=="T" (
 	echo Please install composer from "https://getcomposer.org/download/"
 	pause
