@@ -1,6 +1,6 @@
 @echo off
 
-echo Are you installed "Composer"?
+echo Are you installed "Composer"?(Y/N)
 
 set /p Composer=
 set T=F
