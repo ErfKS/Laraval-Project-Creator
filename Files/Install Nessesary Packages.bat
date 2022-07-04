@@ -22,6 +22,9 @@ call npm i --save-dev sass-loader@latest
 call npm i --save-dev postcss@latest
 call npm i --save-dev webpack@latest
 
+echo Installing "laravel/legacy-factories"
+call composer require laravel/legacy-factories
+
 echo Do you want create Webpack.mix.js?(Y/N)
 set /p createWebpak=
 set T=F
